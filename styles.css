@@ -1,0 +1,263 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fffbfb;  
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #151414;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    max-height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+header .name  {
+    text-align:unset;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding-inline-start: 100px;
+    position:absolute;
+    top :4%;    
+}
+
+header .font{
+    text-align:center;
+    font-size:medium;
+    text-indent: 40px;
+    margin-top: 5px;
+    position: relative;
+}
+
+a:hover{
+    color: #ff5722;
+}
+
+.container button{
+    margin-top: 0px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/3.jpg');
+    background-size: cover;
+    color: rgb(233, 227, 227);
+    text-align: center;
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+}
+
+.about, .contact {
+    background-color: #fff;
+}
+.set{
+    display: block;
+    margin-left: 375px;
+    margin-right:50px;
+    width: 600px;
+}
+
+.set1{
+    margin :50px;
+    text-align:center;
+}
+
+.services, .gallery {
+    background-color: #fafafa;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Service Buttons 
+.service-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* Gallery Grid 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 8px;
+} */
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* in-line-icon-messeage */
+.f1{
+    color: #fafafa;
+}
+
+.f2{
+    color: #fafafa;
+}
+
+.f3{
+    color: #fafafa;
+}
+.fa-square-envelope{
+    font-size: medium;
+    color: #fafafa;
+}
+
+.fa-phone{
+    font-size: medium;
+    color:#fafafa;
+}
+
+
+.fa-phone{
+    font-size: medium;
+    color:#fafafa;
+}
+/* social icon */
+.f4{
+    font-size:15px;
+}
+.fa-envelope{
+    font-size: 20px;
+    color:#fafafa;
+}
+
+.fa-instagram{
+    font-size: 20px;
+    color:#fafafa; 
+}
+
+.fa-twitter{
+    font-size: 20px;
+    color:#fafafa; 
+}
+
+.fa-google{
+    font-size: 18px;
+    color: #fafafa;
+}
+
+.fa-youtube{
+    font-size: 20px;
+    color: #fafafa;
+}
+
+/* after hover effect */
+.fa-envelope:hover{
+    font-size: 20px;
+    color: #846b37;
+}
+
+.fa-instagram:hover{
+    font-size: 20px;
+    color: #8f184a;
+}
+
+.fa-twitter:hover{
+    font-size: 20px;
+    color:#50b1c2;
+}
+
+.fa-google:hover{
+    font-size: 20px;
+    color:#24151594;
+}
+
+.fa-youtube:hover{
+    font-size: 20px;
+    color: #e10909;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+}

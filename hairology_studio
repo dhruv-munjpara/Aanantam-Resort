@@ -1,0 +1,135 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="hairology.css">
+
+<meta name="viewport" content="width=device-width, initial-scale = 1">
+</head>
+<body>
+<section id="banner">
+  <img src="D:\java script\logo.jpg" class="logo">
+  <div class="text1">
+<h1>Hairology studio</h1>
+<p>Styling Your Hair Is styling Your Life</p>
+<div class="btn">
+<a href="#"><span></span>Find Out</a>
+<a href="#"><span></span>Read More</a>
+</div>
+  </div>
+</section>
+
+
+<div id="nava">
+<nav>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">FEATURES</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">FEEDBACK</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+</nav>
+</div>
+
+<div id="menubtn">
+<img src="menuu.png" id="menu">
+</div>
+
+
+<!-- cod for features-->
+<section  id="features">
+<div class="title-text">
+<p>FEATURES</p>
+<h1>Why choose us ??</h1>
+</div>
+
+<div class="feature-box">
+<div class="features">
+<h1>Experienced Staff</h1>
+
+<div class="feature-desc">
+<div class="feature-icon">
+<img src="shield.png">
+</div>
+   <div class="feature-text">
+ <p>///////////////////////////////////////////////////////////
+     ////////////////////////////////////////////////////////////</p>
+   </div>
+</div>
+</div>
+
+
+<div class="features">
+<h1>Pre booking online</h1>
+
+<div class="feature-desc">
+<div class="feature-icon">
+<img src="pre booking.png">
+</div>
+   <div class="feature-text">
+ <p>///////////////////////////////////////////////////////////
+     ////////////////////////////////////////////////////////////</p>
+   </div>
+</div>
+</div>
+
+
+<div class="features">
+<h1>Affordable Price</h1>
+
+<div class="feature-desc">
+<div class="feature-icon">
+<img src="rupee.png">
+</div>
+   <div class="feature-text">
+ <p>///////////////////////////////////////////////////////////
+     ////////////////////////////////////////////////////////////</p>
+   </div>
+</div>
+</div>
+
+<!--<div class="feature-img">
+<img src="barber.jpg">
+</div>-->
+</div>
+</section>
+<!-- cod for features-->
+
+<!--cod for service-->
+<section id="service">
+<div class="title-text">
+<p>Services</p>
+<h1>We Provides Better</h1>
+</div>
+
+<div class="service-box">
+<div class="singal-service"><img src="......"></div>
+<div class="singal-service"><img src="......"></div>
+<div class="singal-service"><img src="......"></div>
+<div class="singal-service"><img src="......"></div>
+</div>
+</section>
+<!--cod for service-->
+<script>
+var menubtn=document.getElementById('menubtn');
+var nava=document.getElementById('nava');
+var menu=document.getElementById('menu');
+
+nava.style.right== "-500px"
+
+menubtn.onclick=function()
+{
+if(nava.style.right== "-500px")
+{
+nava.style.right="0";
+menu.src="close.jpg";
+}
+else
+{
+nava.style.right="-500px";
+menu.src="menuu.png";
+}
+}
+</script>
+</body>
+</html>
