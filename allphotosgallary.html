@@ -137,6 +137,17 @@
         </div>
     </footer>
 
+    <script>
+        // Open modal to show larger image
+        function openModal(imageSrc) {
+            document.getElementById("large-image").src = imageSrc;
+            document.getElementById("myModal").style.display = "flex";
+        }
 
+        // Close modal when clicked outside the image
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 </body>
 </html>
