@@ -56,6 +56,74 @@
         .secondHeader nav ul li a:hover {
             text-decoration: underline;
         }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background: url('images/r3.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/r3.jpg') no-repeat center center/cover;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        .overlay-container {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .overlay-container img {
+            width:400px;
+            border-radius: 5px;
+        }
+        .content {
+            max-width: 400px;
+        }
+        .content h1 {
+            margin: 0 0 10px;
+            font-family: cursive;
+        }
+        .content p {
+            line-height: 1.6;
+            margin: 0;
+        }
+        .btn {
+             display: inline-block;
+             padding: 10px 20px;
+             background-color: black;
+             color: white;
+             text-align: center;
+             border-radius: 5px;
+             text-decoration: none;
+             font-size: 16px;
+             font-weight: bold;
+             transition: background-color 0.3s ease;
+             }
+
+        .btn:hover {
+          background-color:black;
+                   }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -96,7 +164,23 @@
         </div>
     </div>
 
-    <h1 style="text-align: center;">Suites</h1>
+
+    <div class="background">
+        <div class="overlay-container">
+            <img src="images/r5.JPG" alt="Overlay Image">
+            <div class="content">
+                <h1>Suites</h1>
+                <h3>(967 Sq.ft.)</h3>
+                <p>Ample, well-furnished rooms where classic aesthetics and new-age amenities seamlessly merge.
+                      They harbour a separate living area with a powder room. 
+                     The classy interiors are accompanied by a plethora of amenities to ensure a memorable stay. The 58 sq. ft. bathroom space comes with a shower area. </p>
+                     
+                      <a href="stay2_jusuites.html" class="btn">Junior Suites</a>
+
+            </div>
+        </div>
+    </div>
+
     
     <footer>
         <div class="container">
