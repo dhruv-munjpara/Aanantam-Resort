@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resort suites</title>
+    <title>Resort Rooms</title>
     <style>
         #photo-container {
             margin-top: 20px;
@@ -56,6 +56,75 @@
         .secondHeader nav ul li a:hover {
             text-decoration: underline;
         }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background: url('images/r1.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/r1.jpg') no-repeat center center/cover;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        .overlay-container {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .overlay-container img {
+            width:400px;
+            border-radius: 5px;
+        }
+        .content {
+            max-width: 400px;
+        }
+        .content h1 {
+            margin: 0 0 10px;
+            font-family: cursive;
+        }
+        .content p {
+            line-height: 1.6;
+            margin: 0;
+        }
+        .btn {
+             display: inline-block;
+             padding: 10px 20px;
+             background-color: black;
+             color: white;
+             text-align: center;
+             border-radius: 5px;
+             text-decoration: none;
+             font-size: 16px;
+             font-weight: bold;
+             transition: background-color 0.3s ease;
+             }
+
+        .btn:hover {
+          background-color:black;
+                   }
+
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -96,8 +165,21 @@
         </div>
     </div>
 
-    <h1 style="text-align: center;">Suites</h1>
-    
+    <div class="background">
+        <div class="overlay-container">
+            <img src="images/r1.JPG" alt="Overlay Image">
+            <div class="content">
+                <h1>Executive Rooms</h1>
+                <h3>(421 Sq.ft.)</h3>
+                <p>An ideal haven for families, couples or corporate long stays, our expansive Executive rooms are the quintessence of elegance and modern living. 
+                     contemporary kitchen and a spacious bathroom fitted with a soaking tub and a separate shower area to redefine the tranquil moments of a relaxing stay.</p>
+                     
+                <a href="stay2_rooms.html" class="btn">Superior Rooms</a>
+
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <p>ANATAM RESORT</p>
