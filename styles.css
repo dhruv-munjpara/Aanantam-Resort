@@ -129,10 +129,13 @@ section {
     background-color: #fafafa;
 }
 
-h2 {
+.hero-content .order1 {
+    font-size: 23px;
+    margin-bottom: 380px;
+    color: #ffffff;
     text-align: center;
-    margin-bottom: 30px;
 }
+
 
 /* Service Buttons 
 .service-item {
