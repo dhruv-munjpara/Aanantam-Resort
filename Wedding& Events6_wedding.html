@@ -6,44 +6,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <title>Wedding&Event Resort </title>
     <style>
-        .photo-container {
-            margin-top: 0px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-left:0px;
-            margin-right: 0%;
-            background: url(images/wb1.jpg);
-            height: 500%;
-            justify-content: center;
-           
-        }
-       /* img {
-            width: 20%;
-            height: auto;
-            margin: 10px;
-            border-radius: 8px;
-        }*/
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            
+            text-align: center;
+            background-image: url('images/wb2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
         }
+
+        .content-wrapper {
+            background-color: white;
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-wrapper h1 {
+            margin-top: 10px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .content-wrapper p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            width: 80%;
-            max-width: 1200px;
-            margin-top: 5%;
+            padding: 20px;
         }
 
         .gallery-item {
             position: relative;
             overflow: hidden;
-            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .gallery-item img {
@@ -56,20 +63,23 @@
             transform: scale(1.1);
         }
 
-        .gallery-item .text-overlay {
+        .gallery-item .overlay {
             position: absolute;
-            bottom: 90px;
-            left: -200px;
-            width: 200%;
-            padding: 10px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: rgba(0, 0, 0, 0.5);
             color: white;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             opacity: 0;
             transition: opacity 0.3s ease;
+            font-size: 1.2em;
         }
 
-        .gallery-item:hover .text-overlay {
+        .gallery-item:hover .overlay {
             opacity: 1;
         }
         .secondHeader {
@@ -142,47 +152,51 @@
         </div>
     </div>
 
-    
-    <div class="photo-container ">
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="images/wb1.jpg" alt="Image 1">
-            <div class="text-overlay">Banquet</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb2.jpg" alt="Image 2">
-            <div class="text-overlay">Reception</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb3.jpg" alt="Image 3">
-            <div class="text-overlay">Royal Dinner</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb4.jpg" alt="Image 4">
-            <div class="text-overlay">Wedding</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb5.jpg" alt="Image 5">
-            <div class="text-overlay">Manglik Vidhis</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb6.jpg" alt="Image 6">
-            <div class="text-overlay">Sangeet Sandhya</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb7.jpg" alt="Image 7">
-            <div class="text-overlay">Mehandi</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb8.jpg" alt="Image 8">
-            <div class="text-overlay">Garba Night</div>
-        </div>
-        <div class="gallery-item">
-            <img src="images/wb9.jpg" alt="Image 9">
-            <div class="text-overlay">Pre-Wedding Photoshoot</div>
+    <div class="content-wrapper">
+        <h1>HOST WEDDINGS AND RECEPTIONS WITH 5 STAR LUXURY IN THE LAP OF NATURE</h1>
+        <p> We execute your destination wedding plans in the most pleasant and organised manner in order to fill your big day with immense joy.
+             Memories last a lifetime hence; we ensure that the families and guests are free of responsibilities and get an opportunity to reminisce the happiness of two families coming together while planning your destination wedding near Ahmedabad.</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/wb1.jpg" alt="Image 1">
+                <div class="overlay">Banquet</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb2.jpg" alt="Image 2">
+                <div class="overlay">Reception</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb3.jpg" alt="Image 3">
+                <div class="overlay">Royal Dinner</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb4.jpg" alt="Image 4">
+                <div class="overlay">Wedding</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb5.jpg" alt="Image 5">
+                <div class="overlay">Manglik Vidhis</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb6.jpg" alt="Image 6">
+                <div class="overlay">Sangeet Sandhya</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb7.jpg" alt="Image 7">
+                <div class="overlay">Mehandi</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb8.jpg" alt="Image 8">
+                <div class="overlay">Garba Night</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wb9.jpg" alt="Image 9">
+                <div class="overlay">Pre-Wedding Photoshoot</div>
+            </div>
         </div>
     </div>
-</div>
+
     <footer>
         <div class="container1">
             <p>ANATAM RESORT</p>
