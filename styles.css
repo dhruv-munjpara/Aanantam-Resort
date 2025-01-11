@@ -148,8 +148,9 @@ header nav ul li a {
 }
 
 .hero-content .order1 {
-    font-size: 23px;
-    margin-bottom: 380px;
+    font-size: 25px;
+    font-family: cursive;
+    margin-top:100px;
     color: #ffffff;
     text-align: center;
 }
