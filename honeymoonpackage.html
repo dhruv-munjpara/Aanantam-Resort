@@ -25,6 +25,107 @@
             margin: 0;
             padding: 0;
         }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/room1.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 135vh;
+        }
+
+        .content-container {
+            background-color:rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            width: 200%;
+            height: 95%;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-section img {
+            width: 390px;
+            height: 333px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .top-section .text-content {
+            flex: 1;
+        }
+
+        .text-content h1 {
+            margin: 0 0 10px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .text-content p {
+            margin: 0;
+            color: #555;
+            font-size: 1em;
+        }
+
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottom-section .image-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bottom-section .image-box img {
+            width: 250px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .bottom-section .image-box h1 {
+            margin: 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .bottom-section .image-box p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+        }
+        .image-box button{
+            display: inline-block;
+             padding: 10px 20px;
+             background-color: black;
+             color: white;
+             text-align: center;
+             border-radius: 5px;
+             text-decoration: none;
+             font-size: 16px;
+             font-weight: bold;
+             transition: background-color 0.3s ease;
+             cursor: pointer;
+        }
         .secondHeader {
             background-color: #d7b369;
             color: white;
@@ -95,14 +196,58 @@
         </div>
     </div>
 
-    <h1 style="text-align: center;">honeymoon-package</h1>
+    <div class="main-container">
+        <div class="content-container">
+            <div class="top-section">
+                <div class="text-content">
+                    <h1>BEGIN THE NEW JOURNEY OF LIFE WITH ANANTAM</h1>
+                    <p>A honeymoon is an excursion into the heart of your spouse. A beginning of a lifelong journey of togetherness. 
+                        Ananatam, with its special honeymoon packages, is the perfect place to begin this wonderful journey.
+                    </p>
+                    <p>As you enter the room, be greeted by beautiful and intricate floral decorations. Indulge yourself and your partner with some mouth-watering cake.
+                         Thereafter we give you the option to choose from fruit baskets and almond & saffron milk. Let the dream night turn into a glorious new day with a sumptuous breakfast at Café ana.</p>
+                </div>
+                <img src="images/r8.JPG" alt="Main Image"> <!-- Replace with your image -->
+            </div>
 
-    <div id="photo-container">
-        <img src="images/ent1.PNG" alt="Resort Photo 1">
-        <img src="images/ent1.PNG" alt="Resort Photo 2">
-        <img src="images/ent1.PNG" alt="Resort Photo 3">
-        <img src="images/ent1.PNG" alt="Resort Photo 4">
-   </div>
+            <div class="bottom-section">
+                <div class="image-box">
+                    <img src="images/r1.JPG" alt="Image 1"> <!-- Replace with your image -->
+                    <h1>Silver Package</h1>
+                    <p>Our silver package has all the ingredients to make your honeymoon sweeter.</p>
+                    <p>• Beautiful light flower decoration on bed</br>
+                        • 01 Bouquet by the bedside</br>
+                        • A 250 Gm heart-shaped cake</br>
+                        • Rate:- 2500 + 18% GST</p>
+                    <button>book now</button>
+                </div>
+                <div class="image-box">
+                    <img src="images/r3.JPG" alt="Image 2"> <!-- Replace with your image -->
+                    <h1>Golden Package</h1>
+                    <p>Our Golden package has all the ingredients to make your honeymoon sweeter.</p>
+                    <p>• Beautiful flower decoration on bed</br>
+                        • 02 Bouquets by the bedside</br>
+                        • A 250 Gm heart-shaped cake </br>
+                        • Heart-shaped white and red balloons on the floor</br>
+                        • Rate:- 3500 + 18% GST</p>
+                    <button>book now</button>
+                </div>
+                <div class="image-box">
+                    <img src="images/r8.JPG" alt="Image 3"> <!-- Replace with your image -->
+                    <h1>Platinum Package</h1>
+                    <p>The Platinum package includes</p>
+                    <p>• Beautiful flower decoration on the bed with a door-to-bed pathway</br>
+                        • Non-Alcoholic Champagne Bottle</br>
+                        • 02 Bouquet by the bedside</br>
+                        • A 250 Gm heart-shaped cake</br>
+                        • Heart-shaped white and red balloons on the floor</br>
+                        • Rate:- 5500 + 18% GST</p>
+                    <button>book now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container1">
             <p>ANATAM RESORT</p>
