@@ -56,6 +56,116 @@
         .secondHeader nav ul li a:hover {
             text-decoration: underline;
         }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/pbgi.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        .content-section {
+            background-color: #fff;
+            max-width: 900px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .content-row:nth-child(odd) .content {
+            order: 1;
+        }
+
+        .content-row:nth-child(odd) .image {
+            order: 2;
+        }
+
+        .content-row:nth-child(even) .content {
+            order: 2;
+        }
+
+        .content-row:nth-child(even) .image {
+            order: 1;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .extra-section {
+            background-color: #fff;
+            max-width: 900px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .extra-section .extra-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .extra-section .extra-row .extra-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .extra-section .extra-row .extra-image {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .extra-section .extra-row .extra-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .content-row, .extra-row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content {
+                padding: 10px 0;
+            }
+
+            .image {
+                margin-top: 20px;
+            }
+
+            .extra-content {
+                padding: 10px 0;
+            }
+
+            .extra-image {
+                margin-top: 20px;
+            }
+        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -95,11 +205,93 @@
         </div>
     </div>
 
-    <h1 style="text-align: center;">picnic-package</h1>
-
-    <div id="photo-container">
-        <img src="images/ent1.PNG" alt="Resort Photo 1">
+    
+    <!-- Main Content Section -->
+    <div class="content-section">
+        <div class="content-row">
+            <div class="content">
+                <h1>Package 1</h1>
+                <h3>For Adult (Rs. 1,660 Per Person)</h3>
+                <p>Breakfast</br>
+                    Lunch </br>
+                    Hi-Tea</br>
+                    Timings: 09:00 - 17:00</p>
+            </div>
+            <div class="image">
+                <img src="images/p2.jpg" alt="Image 1"> <!-- Replace with your image -->
+            </div>
+        </div>
+        <div class="content-row">
+            <div class="image">
+                <img src="images/p3.jpg" alt="Image 2"> <!-- Replace with your image -->
+            </div>
+            <div class="content">
+                <h1>Package 2</h1>
+                <h3>For Adult (Rs. 1,800 Per Person)</h3>
+                <p> Lunch</br>
+                    Hi-Tea</br>
+                    Dinner</br>
+                    Timings: 12:00 - 22:00</p>
+            </div>
+        </div>
+        <div class="content-row">
+            <div class="content">
+                <h1>Package 3</h1>
+                <h3>For Adult (Rs. 2,250 Per Person)</h3>
+               <p> Lunch</br>
+                    Hi-Tea</br>
+                    Dinner</br>
+                    Timings: 09:00 - 22:00</p>
+            </div>
+            <div class="image">
+                <img src="images/p4.jpg" alt="Image 3"> <!-- Replace with your image -->
+            </div>
+        </div>
     </div>
+
+    <!-- Extra Section -->
+    <div class="extra-section">
+        <div class="extra-row">
+            <div class="extra-content">
+                <h2>Spa and Wellness</h2>
+                <p>Relax and rejuvenate with our signature spa treatments and wellness programs.</p>
+            </div>
+            <div class="extra-image">
+                <img src="images/3.jpg" alt="Extra Image 1"> <!-- Replace with your image -->
+            </div>
+        </div>
+        <div class="extra-row">
+            <div class="extra-image">
+                <img src="images/3.jpg" alt="Extra Image 2"> <!-- Replace with your image -->
+            </div>
+            <div class="extra-content">
+                <h2>Gourmet Dining</h2>
+                <p>Indulge in culinary delights prepared by world-class chefs using the finest ingredients.</p>
+            </div>
+        </div>
+        <div class="extra-row">
+            <div class="extra-content">
+                <h2>Exclusive Events</h2>
+                <p>Attend special events and gatherings, from wine tastings to cultural performances.</p>
+            </div>
+            <div class="extra-image">
+                <img src="images/3.jpg" alt="Extra Image 3"> <!-- Replace with your image -->
+            </div>
+        </div>
+        <div class="extra-row">
+            <div class="extra-image">
+                <img src="images/3.jpg" alt="Extra Image 4"> <!-- Replace with your image -->
+            </div>
+            <div class="extra-content">
+                <h2>Family Fun</h2>
+                <p>Create unforgettable memories with family-friendly activities for all ages.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+
     <footer>
         <div class="container1">
             <p>ANATAM RESORT</p>

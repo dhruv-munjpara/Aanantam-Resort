@@ -56,6 +56,62 @@
         .secondHeader nav ul li a:hover {
             text-decoration: underline;
         }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background: url('images/co3.JPG') no-repeat center center/cover;
+            height: 130vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/co3.JPG') no-repeat center center/cover;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        .overlay-container {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .overlay-container img {
+            width:680px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .content {
+            max-width: 700px;
+        }
+        .content h1 {
+            margin: 0 0 10px;
+            font-family: cursive;
+            text-align: center;
+            font-size:xx-large;
+        }
+        .content p {
+            line-height: 1.6;
+            margin: 0;
+            justify-content: center;
+        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -95,11 +151,22 @@
         </div>
     </div>
 
-    <h1 style="text-align: center;">Corporate Event</h1>
-
-    <div id="photo-container">
-        <img src="images/ent1.PNG" alt="Resort Photo 1">
+    <div class="background">
+        <div class="overlay-container">
+           
+            <div class="content">
+                <h1>Unmatched Service - When Perfection is Simply Not Enough</h1>
+                <img src="images/co1.JPG" alt="Overlay Image">
+                <p>Ananatam provides an elite and reliable platform for corporate meetings, 
+                    conferences as well as creative arrangements. A variety of arrangement options,
+                     a dedicated events team along with an exemplary service of our resort, will make your event flawless and stress-free. 
+                     Numerous combinations are available to suit your preferences in decor, location, as well as dining arrangements. Our team is well trained to provide the best experiences whether it be a social or a corporate event. 
+                     Our goal is to exceed your expectations and ensure that your guests are most comfortable. For this, we provide an array of services that would enhance the purpose of your occasion.</p>
+            </div>
+        </div>
     </div>
+
+    
     <footer>
         <div class="container1">
             <p>ANATAM RESORT</p>
