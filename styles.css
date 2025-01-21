@@ -19,6 +19,8 @@ header {
     padding: 20px 0;
     width: 100%;
     position:fixed;
+    z-index: 10;
+
 }
 
 header .container {
@@ -85,7 +87,8 @@ header nav ul li a {
 .about-order2{
     font-size:42px;
     font: bold;
-    font-family: serif;margin-top: -45px;
+    font-family: serif;
+    margin-top: -45px;
     
 }
 .text-content .about-order3{
@@ -153,7 +156,15 @@ header nav ul li a {
     margin-top:100px;
     color: #ffffff;
     text-align: center;
-}
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent gray */
+    color: white; /* Ensure text is readable */
+    padding: 20px; /* Add spacing inside the element */
+    border-radius: 10px; /* Optional: rounded corners */
+    max-width: 600px; /* Optional: set a max width for better layout */
+    margin: auto; /* Center the content */
+    text-align: center; /* Center-align the text */
+    backdrop-filter: blur(2px); /* Optional: add a slight blur effect for the background */
+    }
 
 
 /* Section Styles */
@@ -180,7 +191,33 @@ section {
     background-color: #fafafa;
 }
 
+/* add map */
+.map1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.m1{
+    color: #333;
+    margin-bottom: 30px;
+    font-size:30px;
+    font: bold;
+    font-family: serif;
+}
+
+.m2{
+    text-align: center;
+    font-family:monospace;
+    font-size:larger;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+}
 
 /* Service Buttons 
 .service-item {
